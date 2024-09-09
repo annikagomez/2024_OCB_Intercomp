@@ -6,12 +6,9 @@ Metatranscriptome assembly & annotation performed by Annika Gomez (algomez@ldeo.
 
  
 
-- Quality filter and trim adapters
+- Quality filter and trim adapters with Trim Galore [Perl wrapper for Fastqc & Cutadapt]
 
-   - 1.1 fastqc.sh 
-
-   -  1.2 cutadapt.sh
-
+Note: no adapters detected, but ~600k reverse reads (1.2% of reads) are polyG runs in pre-trimmed data
 
  
 
@@ -29,6 +26,4 @@ Metatranscriptome assembly & annotation performed by Annika Gomez (algomez@ldeo.
 
 Program versions used: 
 
-fastqc=v0.12.1 
-
-trimmomatic=v0.39 
+trim-galore=v0.6.10
