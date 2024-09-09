@@ -10,7 +10,7 @@ Metatranscriptome assembly & annotation performed by Annika Gomez (algomez@ldeo.
 
    - 1.1 fastqc.sh 
 
-   -  1.2 trimmomatic.sh
+   -  1.2 cutadapt.sh
 
 
  
