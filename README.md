@@ -6,15 +6,12 @@ Metatranscriptome assembly & annotation performed by Annika Gomez (algomez@ldeo.
 
  
 
-Quality filter and trim adapters (qc_adapters.sh) 
+- Quality filter and trim adapters
 
-1.1 Run Fastqc  
+   - 1.1 fastqc.sh 
 
-Fastqc.sh, outdir = 00.qc/ 
+   -  1.2 trimmomatic.sh
 
-1.2 Run trimmomatic 
-
-Automatically detects adaptor sequences 
 
  
 
