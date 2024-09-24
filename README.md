@@ -11,8 +11,11 @@ Metatranscriptome assembly & annotation performed by Annika Gomez (algomez@ldeo.
 Note: no adapters detected, but ~600k reverse reads (1.2% of reads) are polyG runs in pre-trimmed data. After trimming using auto-detection of adapters and trimming based on quality score, still see polyG runs as well as biased base distribution in first 12 bp and last 2bp of each read (forward and reverse), so reran Trim Galore with hard cuts and specified to removed polyG sequence. 
 
 2. Assemble with rnaSPAdes
+        - Paired-end mode, default parameters
 
- 
+4. Evaluate assembly with Quast
+
+5. Map reads to assembled transcripts with BWA-Mem
 
  
 
@@ -26,4 +29,6 @@ Program versions used:
 
 trim-galore=v0.6.10
 
-SPAdes=v
+SPAdes=v4.0.0
+
+Quast=v5.0.2
