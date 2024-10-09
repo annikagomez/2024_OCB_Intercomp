@@ -17,7 +17,9 @@ Note: no adapters detected, but ~600k reverse reads (1.2% of reads) are polyG ru
 
 5. Map reads to assembled transcripts with BWA-Mem
 
- 
+6. Get taxonomic IDs with EUKulele
+   symlink input file in 02.rnaspades/ to 05.eukulele/ so it has the location and file ending that the program will look for:
+      ln -s 02.rnaspades/transcripts.fasta 05.eukulele/transcripts.fna
 
  
 
@@ -32,3 +34,9 @@ trim-galore=v0.6.10
 SPAdes=v4.0.0
 
 Quast=v5.0.2
+
+bwa = 
+
+samtools=
+
+EUKulele=
