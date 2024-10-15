@@ -11,13 +11,13 @@ Metatranscriptome assembly & annotation performed by Annika Gomez (algomez@ldeo.
 Note: no adapters detected, but ~600k reverse reads (1.2% of reads) are polyG runs in pre-trimmed data. After trimming using auto-detection of adapters and trimming based on quality score, still see polyG runs as well as biased base distribution in first 12 bp and last 2bp of each read (forward and reverse), so reran Trim Galore with hard cuts and specified to removed polyG sequence. 
 
 2. Assemble with rnaSPAdes
-        -Paired-end mode, default parameters
-        -logs/spades.log
+      -Paired-end mode, default parameters
+      -logs/spades.log
 
-3. Evaluate assembly with Quast
+4. Evaluate assembly with Quast
        -quast.txt
 
-4. Predict protein/coding sequences with TransDecoder
+5. Predict protein/coding sequences with TransDecoder
         -.cds.gz and .pep.gz files in Google Drive folder
 
 6. Map reads to predicted CDS with BWA-Mem
