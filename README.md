@@ -15,18 +15,16 @@ Note: no adapters detected, but ~600k reverse reads (1.2% of reads) are polyG ru
 
 4. Evaluate assembly with Quast
 
-5. Map reads to assembled transcripts with BWA-Mem
+5. Predict protein/coding sequences with TransDecoder
 
-6. Get taxonomic IDs with EUKulele
-      - Symlink input file in 02.rnaspades/ to 05.eukulele/ so it has the location and file ending that the program will look for:
+6. Map reads to predicted CDS with BWA-Mem
 
-    ln -s 02.rnaspades/transcripts.fasta 05.eukulele/transcripts.fna
+7. Get taxonomic IDs with EUKulele
+   
+8. Get functional annotations with Eggnog mapper
+   
+9. Jupyter notebook compiles outputs of 6,7,&8 into a tab-separated results file
 
- 
-
- 
-
- 
 
 Program versions used: 
 
@@ -36,8 +34,12 @@ SPAdes=v4.0.0
 
 Quast=v5.0.2
 
+Transdecoder
+
 bwa = 
 
 samtools=
 
 EUKulele=
+
+eggnog_mapper=
