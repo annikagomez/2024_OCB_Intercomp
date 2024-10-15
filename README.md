@@ -18,15 +18,16 @@ Note: no adapters detected, but ~600k reverse reads (1.2% of reads) are polyG ru
        -quast.txt
 
 4. Predict protein/coding sequences with TransDecoder
+        -.cds.gz and .pep.gz files in Google Drive folder
 
-5. Map reads to predicted CDS with BWA-Mem
+6. Map reads to predicted CDS with BWA-Mem
 
-6. Get taxonomic IDs with EUKulele
+7. Get taxonomic IDs with EUKulele
        -Database = marmmetsp
    
-7. Get functional annotations with Eggnog mapper
+8. Get functional annotations with Eggnog mapper
    
-8. Jupyter notebook compiles outputs of 5, 6, & 7 into a tab-separated results file
+9. Jupyter notebook compiles outputs of 5, 6, & 7 into a tab-separated results file
       -intercomp_counts_table.ipynb
 
 Program versions used: 
