@@ -14,16 +14,41 @@ Note: no adapters detected, but ~600k reverse reads (1.2% of reads) are polyG ru
         - Paired-end mode, default parameters
 
 4. Evaluate assembly with Quast
+        - Main Quast output:
+   All statistics are based on contigs of size >= 80 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
 
-5. Predict protein/coding sequences with TransDecoder
+Assembly                    transcripts
+# contigs (>= 0 bp)         2826239    
+# contigs (>= 1000 bp)      26057      
+# contigs (>= 5000 bp)      35         
+# contigs (>= 10000 bp)     0          
+# contigs (>= 25000 bp)     0          
+# contigs (>= 50000 bp)     0          
+Total length (>= 0 bp)      597054553  
+Total length (>= 1000 bp)   37610909   
+Total length (>= 5000 bp)   226530     
+Total length (>= 10000 bp)  0          
+Total length (>= 25000 bp)  0          
+Total length (>= 50000 bp)  0          
+# contigs                   2826239    
+Largest contig              9336       
+Total length                597054553  
+GC (%)                      53.65      
+N50                         188        
+N75                         153        
+L50                         875854     
+L75                         1778112    
+# N's per 100 kbp           98.98  
 
-6. Map reads to predicted CDS with BWA-Mem
+6. Predict protein/coding sequences with TransDecoder
 
-7. Get taxonomic IDs with EUKulele
+7. Map reads to predicted CDS with BWA-Mem
+
+8. Get taxonomic IDs with EUKulele
    
-8. Get functional annotations with Eggnog mapper
+9. Get functional annotations with Eggnog mapper
    
-9. Jupyter notebook compiles outputs of 6,7,&8 into a tab-separated results file
+10. Jupyter notebook compiles outputs of 6,7,&8 into a tab-separated results file
 
 
 Program versions used: 
